@@ -234,20 +234,93 @@ p {
 
 .card1 ,
 .card2{
-    height: 30vh;
-    width: 27vh;
+    height: 26vh;
+    width: 22vh;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 1px 2px 5px rgb(192, 192, 192);
+    padding: 35px;
+    padding-top: 20px;
+    margin-right: 2vh;
+    margin-bottom: 2.8vh;
+    overflow: hidden;
 }
 
 .card1 {
     display: grid;
-    grid-template: repeat(3,1fr) / 1fr;
+    grid-template: repeat(3, 1fr) / 1fr;
 }
 
 .card2 {
     display: grid;
     grid-template: repeat(4, 1fr) / 1fr;
+    align-items:baseline;
+}
+
+.card1 .content-title,
+.card2 .content-title  {
+    font-size: 0.85rem;
+    height: 10px;
+}
+
+.content{
+    padding-bottom: 20px;
+    
+}
+
+.content:nth-child(-n+2) {
+    border-bottom: solid 1px rgb(204, 203, 203);
+}
+
+.content:nth-last-child(-n+2) {
+  margin-top: 20px;
+}
+
+.content > .text {
+    font-weight: 500;
+    color: gray;
+    font-size: 0.7rem;
+    width: 20vh;
+    height: 3vh;
+}
+
+.card2 img {
+    height: 5vh;
+    border-radius: 10vh;
+    margin-right: 15px;
+}
+
+.user {
+    position:relative;
+    top: 5px;
+    margin: 8px;
+    bottom: 6px;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.card2 .user:nth-child(4) > img{
+    border-radius: 106vh;
+}
+
+.user > .text {
+    color: gray;
+    font-size: 0.8rem;
+    width: 20vh;
+    height: 3vh;
+    position: relative;
+    top: 20px;
+}
+
+.user > .content-title {
+    font-size: 0.85rem;
+}
+
+.user > .text,
+.user > .content-title {
+    font-weight: normal;
+    grid-column: 2/3;
+    grid-row: 1 / 2;
+    margin-top: 5px;
 }
 
