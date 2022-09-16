@@ -171,6 +171,39 @@ button:focus{
 }
 
 
+.bottom-left {
+    display: grid;
+    grid-template: 1fr / 1fr 6fr;
+    
+}
+
+.profile-pic img {
+    height: 8vh;
+    border-radius: 10vh;
+}
+
+.profile-pic {
+    justify-self: flex-end;
+}
+
+.welcome {
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    position:relative;
+    top: 13px;
+    word-spacing: 2px;
+}
+
+.greeting {
+    font-size: 0.85rem;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
 
 
 
