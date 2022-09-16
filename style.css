@@ -20,7 +20,7 @@ body{
 .sidebar {
     background-color: #0284c7;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     grid-row: 1 / 3;
     display: grid;
     height: 100%;
@@ -81,11 +81,12 @@ ul {
 
 
 .header {
-    box-shadow: 1px 2px 4px rgb(175, 175, 175);
+    box-shadow: 1px 2px 5px rgb(192, 192, 192);
     grid-column: 2/3;
     grid-row: 1/2;
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr ;
+    position: relative;
 }
 
 
@@ -116,7 +117,7 @@ ul {
     margin-left: 40px;
     border-radius: 20px;
     padding-left: 10px;
-    background-color: rgb(221, 226, 236);
+    background-color: rgb(227, 231, 238);
 
 }
 
@@ -166,7 +167,7 @@ button:focus{
     width: 10vh;
     border-radius: 2vh;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 0.9rem;
 }
 
@@ -187,7 +188,7 @@ button:focus{
 }
 
 .welcome {
-    font-weight: bold;
+    font-weight: 600;
     margin-left: 20px;
     font-size: 1.3rem;
     position:relative;
@@ -211,5 +212,42 @@ p {
 .main-content {
     grid-column: 2/3;
     grid-row:2/3;
+    display: grid;
+    grid-template: 1fr / 4fr 1fr;
+    background-color:rgb(227, 231, 238);
+    padding-top: 40px;
+}
+
+.main-left {
+    grid-column: 1 / 2;
+}
+
+.main-right {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+}
+
+.main-right p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card1 ,
+.card2{
+    height: 30vh;
+    width: 27vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgb(192, 192, 192);
+}
+
+.card1 {
+    display: grid;
+    grid-template: repeat(3,1fr) / 1fr;
+}
+
+.card2 {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
 }
 
