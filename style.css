@@ -15,6 +15,8 @@ body{
 
 
 
+/*--------------------------------------------------------------------------------------------------------*/
+
 
 
 .sidebar {
@@ -40,7 +42,7 @@ body{
 
 
 .title {
-    font-size: 2rem;
+    font-size: 3vh;
     margin-bottom: 0;
     margin-top: 5px;
 }
@@ -78,6 +80,7 @@ ul {
 
 
 
+/*--------------------------------------------------------------------------------------------------------*/
 
 
 .header {
@@ -206,6 +209,7 @@ p {
 }
 
 
+/*--------------------------------------------------------------------------------------------------------*/
 
 
 
@@ -213,9 +217,17 @@ p {
     grid-column: 2/3;
     grid-row:2/3;
     display: grid;
-    grid-template: 1fr / 4fr 1fr;
+    grid-template: 1fr / 3.8fr 1fr;
     background-color:rgb(227, 231, 238);
-    padding-top: 40px;
+    padding-top: 20px;
+}
+
+.main-title {
+    grid-row: 1 / 2;
+}
+
+.main-title:nth-child(1){
+    margin-left: 20px;
 }
 
 .main-left {
@@ -227,7 +239,8 @@ p {
     grid-template: 1fr 1fr / 1fr;
 }
 
-.main-right p {
+.main-right p,
+.main-title {
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -294,13 +307,10 @@ p {
     position:relative;
     top: 5px;
     margin: 8px;
+    margin-left: 0px;
     bottom: 6px;
     display: grid;
     grid-template: 1fr / 1fr 1fr;
-}
-
-.card2 .user:nth-child(4) > img{
-    border-radius: 106vh;
 }
 
 .user > .text {
@@ -324,3 +334,37 @@ p {
     margin-top: 5px;
 }
 
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.main-left {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: self-start;
+}
+
+.project-card {
+    width: 50vh;
+    height: 24vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgb(192, 192, 192);
+}
+
+.project-card:nth-child(odd){
+    margin-left: 20px;
+}
+
+@media (max-width: 1526px) {
+
+.project-card{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.main-right{
+        display: grid;
+        grid-template: 0.1fr 1fr / 1fr;
+}
+ }
