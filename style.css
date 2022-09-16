@@ -60,7 +60,7 @@ ul {
 
 
 
-li > img,
+.sidebar li > img,
 .title > img {
     /*White color to all icons inside a li*/
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(86deg) brightness(107%) contrast(101%);
@@ -111,7 +111,6 @@ li > img,
 
 .search-input{
     border: none; 
-
     width: 85%;
     height: 30px;
     margin-left: 40px;
@@ -120,6 +119,59 @@ li > img,
     background-color: rgb(221, 226, 236);
 
 }
+
+.upper-right > li > .bell {
+       height: 3vh;
+}
+
+.upper-right > li > .pp-header {
+    height: 5vh;
+    border-radius: 10vh;
+
+}
+
+.upper-right {
+    display: grid;
+    grid-template: 1fr / 8vh 9vh 50%;
+    align-items: center;
+    font-weight: 600;
+}
+
+.bottom-right {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    align-items: center;
+    position: relative;
+    right: 4vh;
+}
+
+/*remove default button styles*/
+
+button{
+    background: transparent;
+    border: none;
+}
+button:focus{
+    outline: none;
+    border: none;
+}
+
+
+.bottom-right button {
+
+    background-color: #0284c7;
+    height: 3.9vh;
+    width: 10vh;
+    border-radius: 2vh;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
 
 
 
